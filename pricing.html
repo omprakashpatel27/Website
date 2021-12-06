@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pricing - Sailor Bootstrap Template</title>
+  <title>AICES 2022</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -109,7 +109,8 @@
               <li><a href="services.html">Tracks and Topics</a></li>
               <li><a href="guide.html">Guidelines For Paper Submission</a></li>
               <li><a href="pricing.html">Registration</a></li>
-              <li><a href="portfolio.html">Important Dates</a></li>               
+              <li><a href="portfolio.html">Important Dates</a></li>    
+              <li><a href="opportunities.html">Opportunity to become a Reviewer</a></li>           
               </li>
             </ul>
           </li>
@@ -122,7 +123,7 @@
             </ul>
           </li>
           <li><a href="portfolio.html">Important Dates</a></li>
-          <li><a href="sponsor.html">Sponsors</a></li>
+          
           <li><a href="award.html">Awards</a></li>
           <li><a href="contact.html">Contact</a></li>
           
@@ -193,16 +194,61 @@
             <tr><td>IFSC CODE</td><td>SBIN0002852</td></tr>
             <tr><td>BANK NAME</td><td>STATE BANK OF INDIA</td></tr>
             <tr><td>BRANCH NAME</td><td>G.C.E.T BRANCH</td></tr>
-            <tr><td>COMPLETE BRANCH ADDRESS</td><td>G.E. ROAD,RAIPUR-492010,C.G.</td></tr>
+            <tr><td>COMPLETE BRANCH ADDRESS</td><td>G.E. ROAD,RAIPUR-492010,C.G</td></tr>
             <tr><td>BANK NAME</td><td>492002004</td></tr>
             <tr><td>ACCOUNT TYPE</td><td>SAVING A/C</td></tr>
           </table>
         </div>
       </div>
     </div>
-  <div class="col-sm">
-  </div>
-</div>
+    <div class="col-sm">
+    </div><br>
+    </div>
+    </section>
+    <div>
+       <!-- Display the countdown timer in an element -->
+       <center><p style="font-size:32px;"><span>Time left to submit the paper: <button class="btn btn-danger btn-lg"><span id="demo"></span></button></span></p></center>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 15, 2021 16:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>
+     
+    <section>
+    <div class="container">
+      <h4 class = "d-flex justify-content-center">The papers must be submitted via Easy Chair using the following link:</h4>
+      <h4 class = "d-flex justify-content-center"><a href="https://easychair.org/conferences/?conf=aices2022"><button type="button" class="btn btn-lg btn-primary">Submit My Paper</button></a></h4>
+      </div> 
+      </section> 
+    
+
     
      <!-- <div class="container">
 
@@ -242,7 +288,7 @@
 
 
   <!-- ======= Footer ======= -->
-    <footer id="footer">
+  <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -284,7 +330,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="keynote.html">Speakers</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="team.html">Organizing Committee</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="external.html">External Advisors</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="sponsor.html">Sponsors</a></li>
+              
               <li><i class="bx bx-chevron-right"></i> <a href="award.html">Awards</a></li>
             </ul>
           </div>
